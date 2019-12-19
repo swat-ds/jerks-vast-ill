@@ -1,14 +1,18 @@
 language: ruby
-
 rvm:
-- 2.5
+  - 2.5
+  - 2.6
 
 # from { personal } gem theme
-install: gem install jekyll jemoji html-proofer
+# install: gem install jekyll jemoji html-proofer
 # script: jekyll serve --baseurl "" --detach && htmlproofer ./_site --disable-external --empty-alt-ignore
 
-# from marii [http://marii.info/notes/jekyll-ci]
-script: 
+before_install:
+  - gem install bundler
+git:
+  depth: 1
+
+script:
   - bundle exec jekyll build
   # - bundle exec html-proofer ./_site --only-4xx --check-html --allow_hash_ref --assume-extension --alt-ignore '/.*/'
 branches:
