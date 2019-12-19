@@ -1,0 +1,17 @@
+_site
+.sass-cache
+.bundle
+.DS_Store
+.jekyll-metadata
+.jekyll-cache/
+gemfiles/
+Gemfile
+vendor
+docs
+node_modules
+node_modules
+
+# Ignore the config file that's used for gh-pages.
+_config.gh-pages.yml
+
+
