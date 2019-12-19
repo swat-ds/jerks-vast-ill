@@ -7,7 +7,7 @@ include FileUtils
             TARGET_BRANCH = 'test'
             USER = REPO_SLUG.split("/")[0]
             TOKEN = ENV['ACCESS_TOKEN']
-            COMMIT_MSG = "Site updated via #{ENG['TRAVIS_COMMIT']}".freeze
+            COMMIT_MSG = "Site updated via #{ENV['TRAVIS_COMMIT']}".freeze
             ORIGIN = "https://#{USER}:#{TOKEN}@github.com/#{REPO_SLUG}.git".freeze
             puts "Deploying to #{TARGET_BRANCH} branch from Travis as #{USER}"
             
