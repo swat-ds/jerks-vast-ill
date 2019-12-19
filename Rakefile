@@ -1,4 +1,5 @@
 include FileUtils
+require 'tmpdir'
 
     namespace :deploy do
         desc "push built site to target branch"
