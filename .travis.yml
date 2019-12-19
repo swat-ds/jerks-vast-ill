@@ -1,11 +1,11 @@
 language: ruby
 
 rvm:
-- 2.6
+- 2.5
 
 # from { personal } gem theme
-install: gem install jekyll jekyll-paginate jemoji html-proofer
-script: jekyll serve --baseurl "" --detach && htmlproofer ./_site --disable-external --empty-alt-ignore
+install: gem install jekyll jemoji html-proofer
+# script: jekyll serve --baseurl "" --detach && htmlproofer ./_site --disable-external --empty-alt-ignore
 
 # from marii [http://marii.info/notes/jekyll-ci]
 script: 
