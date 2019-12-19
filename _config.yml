@@ -3,7 +3,7 @@ email: digitalscholarship@swarthmore.edu
 description: >-
   Tests Jekyll + Travis CI 
 baseurl: ""
-url: ""
+url: "."
 twitter_username: _nabilk
 github_username:  bulbil
 
