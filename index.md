@@ -9,7 +9,7 @@ layout: home
 - [ ] S3
     - [x] Setup appropriate S3 bucket/folder
     - [x] Generate appropriate access keys/secret, add them to Travis
-    - [ ] Add them to Travis config using ENV variables syntax
+    - [x] Add them to Travis config using ENV variables syntax
     - [x] How to only push certain buckets?
 - [x] Link Travis and repo
 - [ ] Create Rakefile/Rake tasks
