@@ -4,11 +4,15 @@ layout: home
 
 # Travis CI Test
 
-- [ ] Create new Jekyll project
-- [ ] Create Travis config file
-- [ ] Setup appropriate S3 bucket
-- [ ] Link Travis and repo
+- [x] Create new Jekyll project
+- [x] Create Travis config file
+- [ ] S3
+    - [x] Setup appropriate S3 bucket/folder
+    - [x] Generate appropriate access keys/secret, add them to Travis
+    - [ ] Add them to Travis config using ENV variables syntax
+    - [x] How to only push certain buckets?
+- [x] Link Travis and repo
 - [ ] Create Rakefile/Rake tasks
-    - [ ] Build to branch
+    - [x] Build to branch
     - [ ] HTML Proof
     - [ ] Deploy to S3

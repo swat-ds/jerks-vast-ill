@@ -11,15 +11,25 @@ before_install:
   - gem install bundler
 git:
   depth: 1
-
-script:
-  - bundle exec jekyll build
-  # - bundle exec html-proofer ./_site --only-4xx --check-html --allow_hash_ref --assume-extension --alt-ignore '/.*/'
 branches:
   only:
     - master
-after_success:
-  - bundle exec rake deploy:branch
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # JEKYLL_ENV=production
+
+script:
+  - bundle exec jekyll build
+    # - bundle exec html-proofer ./_site --only-4xx --check-html --allow_hash_ref --assume-extension --alt-ignore '/.*/'
+after_success:
+  - bundle exec rake deploy:branch
+
+deploy:
+  provider: s3
+  access_key_id: S3_ACCESS_KEY_ID
+  secret_access_key: S3_SECRET
+  skip_cleanup: true
+  bucket: "sc-lib-ds-static"
+  upload-dir: jerky-vast-ills
+  detect-encoding: true
+  default_text_charset: 'utf-8'
