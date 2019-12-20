@@ -1,7 +1,6 @@
 language: ruby
 rvm:
-  - 2.5
-  - 2.6
+- 2.5.3
 
 # from { personal } gem theme
 # install: gem install jekyll jemoji html-proofer
@@ -26,10 +25,11 @@ after_success:
 
 deploy:
   provider: s3
-  access_key_id: $S3_ACCESS_KEY_ID
-  secret_access_key: $S3_SECRET
+  access_key_id: ${S3_ACCESS_KEY_ID}
+  secret_access_key: ${S3_SECRET}
   skip_cleanup: true
   bucket: "sc-lib-ds-static"
-  upload-dir: jerky-vast-ills
-  detect-encoding: true
+  local_dir: _site
+  upload_dir: jerky-vast-ills
+  detect_encoding: true
   default_text_charset: 'utf-8'
