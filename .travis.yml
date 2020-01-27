@@ -30,6 +30,6 @@ deploy:
   skip_cleanup: true
   bucket: "sc-lib-ds-static"
   local_dir: _site
-  upload_dir: jerky-vast-ills
+  upload_dir: jerky-vast-ill
   detect_encoding: true
   default_text_charset: 'utf-8'

@@ -4,6 +4,7 @@ description: >-
   Tests Jekyll + Travis CI
 twitter_username: _nabilk
 github_username:  bulbil
+baseurl: jerky-vast-ill
 
 # Build settings
 theme: minima
