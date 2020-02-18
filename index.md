@@ -7,7 +7,7 @@ layout: home
 - [x] Create new Jekyll project
 - [x] Create Travis config file
     - [x] Deploy to S3
-- [ ] S3
+- [x] S3
     - [x] Setup appropriate S3 bucket/folder
     - [x] Generate appropriate access keys/secret, add them to Travis
     - [x] Add them to Travis config using ENV variables syntax
